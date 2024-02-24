@@ -1,6 +1,14 @@
 html {
     font-size: 18px;
 
+    h2 {
+        text-align: center;
+
+        span {
+            color: #1F4F5A;
+        }
+    }
+
     button {
         border: none;
         height: 3.2rem;
@@ -128,6 +136,10 @@ html {
     
             .main-title {
                 max-width: 30rem;
+
+                span {
+                    color: #1F4F5A;
+                }
             }
     
             .main-sub-title {
@@ -167,6 +179,11 @@ html {
             }
         }
     }
+
+    .experience {
+        margin-top: 5rem;
+
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -195,8 +212,13 @@ html {
     html {
         font-size: 16px;
 
+        button {
+            width: 100%;
+        }
+
         .mobile-nav {
             display: flex;
+            width: fit-content;
         }
     
         .desktop-nav {
@@ -207,7 +229,12 @@ html {
             background-image: 
             linear-gradient(90deg, rgba(255,255,255,1) 0%, transparent 100%),
             url('../img/main-bg.jpeg');
-    
+            text-align: center;
+
+            .main-sub-title, .main-text {
+                margin: 0 auto;
+            }
+                
             .advantages {
     
                 .advantages-wrapper {
@@ -215,7 +242,12 @@ html {
     
                     .advantages-item {
                         padding-top: 1.5rem;
-                        max-width: 100%;
+                        flex-direction: column;
+
+                        div {
+                            margin-top: 1rem;
+                            max-width: 70%;
+                        }
                     }
                 }
             }
