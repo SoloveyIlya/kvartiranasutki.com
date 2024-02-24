@@ -3,7 +3,7 @@ html {
 
     button {
         border: none;
-        height: 3.5rem;
+        height: 3.2rem;
         min-width: 12rem;
         transition: all .4s;
         border-radius: 0.5rem;
@@ -118,8 +118,10 @@ html {
     }
 
     .main {
-        background-image: url('../img/main-bg.jpeg');
-        background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, transparent 67%);
+        background-image: 
+            linear-gradient(90deg, rgba(255,255,255,1) 0%, transparent 80%),
+            url('../img/main-bg.jpeg');
+        background-size: cover;
 
         .main-wrapper {
             padding-top: 10rem;
@@ -142,25 +144,81 @@ html {
                 margin-top: 1rem;
             }
         }
+
+        .advantages {
+            margin-top: 5rem;
+            backdrop-filter: blur(1rem);
+
+            .advantages-wrapper {
+                display: flex;
+                justify-content: space-around;
+                padding-top: 2.5rem;
+                padding-bottom: 2.5rem;
+
+                .advantages-item {
+                    display: flex;
+                    align-items: center;
+
+                    svg {
+                        min-width: 72px;
+                        margin-right: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-nav {
+      display: none;
     }
 
-    @media screen and (min-width: 768px) {
-        .mobile-nav {
-          display: none;
-        }
+    .desktop-nav {
+        display: flex;
+    }
 
-        .desktop-nav {
+    .advantages {
+
+        .advantages-wrapper {
+            flex-direction: row;
+
+            .advantages-item {
+                max-width: 30%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+        
+    html {
+        font-size: 16px;
+
+        .mobile-nav {
             display: flex;
         }
-    }
-
-    @media screen and (max-width: 768px) {
-        .mobile-nav {
-          display: flex;
-        }
-
+    
         .desktop-nav {
             display: none;
+        }
+    
+        .main {
+            background-image: 
+            linear-gradient(90deg, rgba(255,255,255,1) 0%, transparent 100%),
+            url('../img/main-bg.jpeg');
+    
+            .advantages {
+    
+                .advantages-wrapper {
+                    flex-direction: column;
+    
+                    .advantages-item {
+                        padding-top: 1.5rem;
+                        max-width: 100%;
+                    }
+                }
+            }
         }
     }
 }
