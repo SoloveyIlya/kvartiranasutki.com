@@ -183,6 +183,14 @@ html {
     .experience {
         margin-top: 5rem;
 
+        .experience-items {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+
+            .experience-item {
+                background-color: #D38D3F;
+            }
+        }
     }
 }
 
