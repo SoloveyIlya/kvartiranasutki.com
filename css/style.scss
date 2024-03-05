@@ -255,7 +255,7 @@ html {
         }
     }
 
-    .create-property-container {
+    .create-property-container, .ask-question {
         margin-top: 5rem;
         margin-bottom: 5rem;
         width: 100%;
@@ -344,6 +344,13 @@ html {
                     background-image: url('../img/down-arrow.png');
                 }
             }
+        }
+    }
+
+    .map {
+        img {
+            width: 100%;
+            margin-top: 3rem;
         }
     }
 }
