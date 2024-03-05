@@ -5,7 +5,7 @@ html {
         text-transform: uppercase;
     }
 
-    h2 {
+    h2, h4 {
         text-align: center;
         text-transform: uppercase;
 
@@ -262,6 +262,90 @@ html {
         display: flex;
         justify-content: center;
     }
+
+    .call-to-action {
+        background-color: #1F4F5A;
+        padding: 5rem 0;
+
+        .call-to-action-title {
+            color: #fff;
+
+            span {
+                color: #D38D3F;
+            }
+        }
+
+        .call-to-action-items {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 5rem;
+            margin-top: 3rem;
+
+            .img {
+                background-image: url(../img/call-to-action.jpeg);
+                background-size: cover;
+                background-position: center;
+            }
+
+            .call-to-action-form {
+                .call-to-action-form-title {
+                    color: #fff;
+                }
+
+                .call-to-action-form-subtitle {
+                    text-align: center;
+                    color: #fff;
+                }
+
+                .name-input {
+                    margin-top: 4rem;
+                }
+
+                button {
+                    width: 100%;
+                    margin-top: 4rem;
+                }
+
+                .terms-of-use {
+                    color: #fff;
+                    text-align: center;
+                    margin-top: 2rem;
+
+                    span {
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .FAQ {
+        margin-top: 5rem;
+
+        .accordion {
+            margin-top: 3rem;
+
+            .accordion-item {
+                button {
+                    text-transform: none;
+                }
+
+                button:focus {
+                    box-shadow: none;
+                }
+
+                .accordion-button:not(.collapsed) {
+                    background-color: #fff;
+                    color: #D38D3F;
+                }
+
+                .accordion-button::after {
+                    background-image: url('../img/down-arrow.png');
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -354,6 +438,17 @@ html {
 
                 .two, .three, .four {
                     border-top: none;
+                }
+            }
+        }
+
+        .call-to-action {
+            .call-to-action-items {
+                grid-template-columns: 1fr;
+
+                .img {
+                    margin-bottom: 4rem;
+                    min-height: 18rem;
                 }
             }
         }
