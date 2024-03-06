@@ -41,7 +41,9 @@
                         +1 (528) 543-0354
                     </span>
 
-                    <button class="button-light">Get in touch</button>
+                    <a href="#call-to-action">
+                        <button class="button-light">Get in touch</button>
+                    </a>
                 </div>
 
                 <button class="navbar-toggler mobile-nav" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -120,7 +122,9 @@
                     Our website ranks at the top in Google
                 </div>
 
-                <button class="button-dark">Create property</button>
+                <a href="#call-to-action">
+                    <button class="button-dark">Create property</button>
+                </a>
             </div>
 
             <div class="advantages">
@@ -292,10 +296,12 @@
         </div>
 
         <div class="create-property-container container">
-            <button class="button-dark">Create property</button>
+            <a href="#call-to-action">
+                <button class="button-dark">Create property</button>
+            </a>
         </div>
 
-        <div class="call-to-action">
+        <div id="call-to-action" class="call-to-action">
             <div class="call-to-action-container container">
                 <h2 class="call-to-action-title">
                     Eliminate the need to find new customers. <span>Leave it to us</span>
@@ -402,7 +408,7 @@
         </div>
 
         <div class="ask-question container">
-            <button class="button-dark">Ask question</button>
+            <button class="button-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Ask question</button>
         </div>
 
         <div class="map">
@@ -412,6 +418,40 @@
                 </h2>
 
                 <img src="./img/map.png" alt="map">
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="call-to-action-form">
+                            <h4 class="call-to-action-form-title">
+                                Request a call right now
+                            </h4>
+                            <div class="call-to-action-form-subtitle">
+                                We will call you back to answer any questions you may have
+                            </div>
+                            <div class="name-input">
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Your name">
+                            </div>
+                            <div class="email-input mt-4">
+                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Your email">
+                            </div>
+                            <div class="mt-4">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your question"></textarea>
+                              </div>
+                            <button class="button-light">Get in touch</button>
+                            <div class="terms-of-use">
+                                By clicking on the button, you agree to the processing of your personal data your personal data and agree <span>User Agreement</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -433,7 +473,9 @@
                     Email: <br/>
                     info@Kvartiranasutki.com
                 </div>
-                <button class="button-light">Get in touch</button>
+                <a href="#call-to-action">
+                    <button class="button-light">Get in touch</button>
+                </a>
             </div>
         </footer>
 

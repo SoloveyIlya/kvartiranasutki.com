@@ -354,6 +354,57 @@ html {
         }
     }
 
+    .modal {
+        color: #fff;
+
+        .modal-dialog {
+            .modal-content {
+                background-color: #1F4F5A;
+
+                .modal-header {
+                    border-bottom: none;
+                    
+                    .btn-close {
+                        min-width: auto;
+                    }
+                }
+
+                .modal-body {
+                    .call-to-action-form {
+                        .call-to-action-form-title {
+                            color: #fff;
+                        }
+        
+                        .call-to-action-form-subtitle {
+                            text-align: center;
+                            color: #fff;
+                        }
+        
+                        .name-input {
+                            margin-top: 4rem;
+                        }
+        
+                        button {
+                            width: 100%;
+                            margin-top: 4rem;
+                        }
+        
+                        .terms-of-use {
+                            color: #fff;
+                            text-align: center;
+                            margin-top: 2rem;
+        
+                            span {
+                                text-decoration: underline;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     footer {
         background-color: #1F4F5A;
         padding-top: 3rem;
